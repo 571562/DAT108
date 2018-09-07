@@ -21,14 +21,14 @@ public class Buffer {
      *
      * @param item the new item
      * 
-     * Oppgåve 1 a)
+     * Oppgåve 2 a)
      */
     public void add(Integer item) {
         while (true) {
         	
             if(buffer.size() < SIZE) {
             		buffer.add(item);
-            	} else { //ei endring
+            	} else { 
             		try {
             			Thread.sleep(50);
             		} catch (InterruptedException e) {
@@ -45,7 +45,7 @@ public class Buffer {
      *
      * @return next item
      * 
-     * Oppgåve 1 b)
+     * Oppgåve 2 b)
      */
     public Integer remove() {
     	int back = 0;
