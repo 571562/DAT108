@@ -28,7 +28,7 @@ public class Buffer {
         	
             if(buffer.size() < SIZE) {
             		buffer.add(item);
-            	} else {
+            	} else { //ei endring
             		try {
             			Thread.sleep(50);
             		} catch (InterruptedException e) {
