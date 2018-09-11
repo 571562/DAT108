@@ -12,7 +12,7 @@ import java.util.LinkedList;
  * @version 30.08.2018 Java version
  */
 public class Buffer {
-
+	
     private final static int SIZE = 10;
     private LinkedList<Integer> buffer = new LinkedList<Integer>();
 
@@ -25,7 +25,6 @@ public class Buffer {
      */
     public void add(Integer item) {
         while (true) {
-        	
             if(buffer.size() < SIZE) {
             		buffer.add(item);
             	} else { 
@@ -38,6 +37,8 @@ public class Buffer {
          
             return;
         }
+    	
+    	
     }
 
     /**
