@@ -14,9 +14,11 @@ public class Oppg3 {
 		Tilsett t1 = new Tilsett("Ola", "Nordmann", 'M', 500000, "Markedsføring");
 		Tilsett t2 = new Tilsett("Kari", "Nilsen", 'K', 600000, "Salg");
 		Tilsett t3 = new Tilsett("Marie", "Hansen", 'K', 550000, "Økonomi");
+
+
 		
-		Function<Integer, Integer> kronetillegg = n -> n + 50000;
-		Function<Integer, Integer> prosenttillegg = n -> n * 2;
+		Function<Double, Double> kronetillegg = n -> n + 50000;
+		Function<Double, Double> prosenttillegg = n -> n * 1.2;
 		
 		System.out.println(t1);
 		System.out.println(t2);
@@ -33,7 +35,7 @@ public class Oppg3 {
 		
 	}
 	
-	private static Function<Integer, Integer> fastkrone(){
+	private static Function<Double, Double> fastkrone(){
 		return ( n -> n + 100000);
 		
 	}

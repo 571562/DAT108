@@ -10,9 +10,9 @@ public class ProdusentOgKonsument {
 	 * Lager eit main-program som køyrer produsenten og konsumenten 
 	 * samstundes.
 	 */
-	
-	public static void main(String[] args) {
-		
+
+public static void main(String[] args) {
+
 		Buffer buffer = new Buffer();
 		Consumer con = new Consumer(buffer);
 		Producer pro = new Producer(buffer);
@@ -23,6 +23,6 @@ public class ProdusentOgKonsument {
 
 //		con.start();
 //		pro.start();
-	}
+		}
 
-}
+		}
