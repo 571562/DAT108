@@ -70,7 +70,13 @@ public class Tilsett {
 	public void setStilling(String stilling) {
 		this.stilling = stilling;
 	}
-	
+
+
+	/**
+	 *  Endre løn.
+	 * @param nyverdi
+	 * @return
+	 */
 	public double endreLon(Function<Double, Double> nyverdi) {
 		return this.arslon = nyverdi.apply( getArslon());
 		

@@ -31,6 +31,7 @@ public class Oppg4 {
 		List<String> etternamn = personer.stream()
 					.map(t -> t.getEtternamn())
 					.collect(Collectors.toList()); 
+		System.out.println("Lista av tilsette med kun etternamn:");
 		etternamn.forEach(System.out::println);
 		System.out.println();
 		
@@ -41,6 +42,7 @@ public class Oppg4 {
 		int antalKvinner = (int) personer.stream()
 					.filter(t -> t.getKjonn() == 'K')
 					.count();
+		System.out.println("Antal tilsette som er kvinner:");
 		System.out.println(antalKvinner);
 		System.out.println();
 		
@@ -60,6 +62,7 @@ public class Oppg4 {
 		 * Oppgåve d : Gi alle Sjefer ei lonsauking pa 7%
 		 */
 		
+		System.out.println("Gjev alle sjefar ei lønsauke på 7%:");
 		personer.stream()
 			.filter(t -> t.getStilling() == "Sjef")
 			.forEach(t -> t.endreLon(n -> n * 1.07));
@@ -82,6 +85,7 @@ public class Oppg4 {
 		 * Oppgåve f : Skriv ut alle tilsette ved SYSO utan å bruka løkka
 		 */
 		
+		System.out.println("");
 		personer.stream()
 			.forEach(System.out::println);
 		System.out.println();
